@@ -14,6 +14,7 @@
     <module>aspect-post-compile-time-weaving</module>
     <module>aspect-stub-sources-for-post-compile-weaving</module>
     <module>aspect-load-time-weaving</module>
+    <module>coverage-report</module>
   </modules>
 
   <properties>
@@ -25,6 +26,8 @@
 
     <aspect.lang.version>1.8</aspect.lang.version>
     <aspectj.version>1.8.13</aspectj.version>
+
+    <jacoco.version>0.8.7</jacoco.version>
   </properties>
 
   <dependencies>
@@ -41,4 +44,28 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>${jacoco.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>generate-code-coverage-report</id>
+            <phase>test</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
