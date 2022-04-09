@@ -25,7 +25,7 @@
     <maven.compiler.target>1.8</maven.compiler.target>
 
     <aspect.lang.version>1.8</aspect.lang.version>
-    <aspectj.version>1.8.13</aspectj.version>
+    <aspectj.version>1.9.9.1</aspectj.version>
 
     <jacoco.version>0.8.7</jacoco.version>
   </properties>
