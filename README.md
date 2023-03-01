@@ -7,7 +7,7 @@
 On base of [this article](https://www.baeldung.com/aspectj)
 
 ## Prerequisites
-- JDK 8
+- JDK 11
 - Maven 3
 
 ## Types of aspects covered
@@ -18,9 +18,4 @@ On base of [this article](https://www.baeldung.com/aspectj)
 ## How to build
 ```
 mvn clean install
-```
-
-## How to build without JDK 8, inside Docker container
-```
-docker compose up
 ```
