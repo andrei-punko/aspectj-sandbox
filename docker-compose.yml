@@ -2,6 +2,8 @@ version: "3"
 
 services:
   builder:
-    build: ./
+    image: maven:3-jdk-8-alpine
+    working_dir: /usr/local
+    entrypoint: ["mvn", "clean", "install"]
     volumes:
       - ./:/usr/local
