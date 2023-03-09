@@ -1,10 +1,10 @@
 
-# Different cases of aspects usage
+# Different cases of Aspects usage
 ![Maven Build](https://github.com/andrei-punko/aspectj-sandbox/workflows/Java%20CI%20with%20Maven/badge.svg)
 [![Coverage](.github/badges/jacoco.svg)](https://github.com/andrei-punko/aspectj-sandbox/actions/workflows/maven.yml)
 [![Branches](.github/badges/branches.svg)](https://github.com/andrei-punko/aspectj-sandbox/actions/workflows/maven.yml)
 
-On base of [this article](https://www.baeldung.com/aspectj)
+Based on [this article](https://www.baeldung.com/aspectj)
 
 ## Prerequisites
 - JDK 11
@@ -16,6 +16,6 @@ On base of [this article](https://www.baeldung.com/aspectj)
 - Load-time weaving
 
 ## How to build
-```
+```shell
 mvn clean install
 ```
