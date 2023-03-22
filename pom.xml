@@ -20,15 +20,16 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <source-target.version>11</source-target.version>
 
-    <maven.compiler.source>${source-target.version}</maven.compiler.source>
-    <maven.compiler.target>${source-target.version}</maven.compiler.target>
+    <java.version>17</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
 
-    <aspect.lang.version>${source-target.version}</aspect.lang.version>
+    <!-- AspectJ properties -->
+    <aspect.lang.version>${java.version}</aspect.lang.version>
     <!-- https://github.com/eclipse/org.aspectj/blob/master/docs/dist/doc/JavaVersionCompatibility.md -->
-    <aspectj.version>1.9.2</aspectj.version>
-    <aspectj-maven-plugin.version>1.12.1</aspectj-maven-plugin.version>
+    <aspectj.version>1.9.19</aspectj.version>
+    <aspectj-maven-plugin.version>1.14.0</aspectj-maven-plugin.version>
 
     <jacoco.version>0.8.8</jacoco.version>
   </properties>
@@ -37,7 +38,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.13.1</version>
+      <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>

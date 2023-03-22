@@ -7,7 +7,7 @@
 Based on [this article](https://www.baeldung.com/aspectj)
 
 ## Prerequisites
-- JDK 11
+- JDK 17
 - Maven 3
 
 ## Types of aspects covered
