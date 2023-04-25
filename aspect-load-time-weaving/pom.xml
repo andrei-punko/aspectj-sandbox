@@ -19,8 +19,10 @@
         <version>3.0.0</version>
         <configuration>
           <argLine>
-            -javaagent:"${settings.localRepository}"/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
+            -javaagent:"${settings.localRepository}"/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar --add-opens java.base/java.lang=ALL-UNNAMED
           </argLine>
+          <useSystemClassLoader>true</useSystemClassLoader>
+          <reuseForks>false</reuseForks>
         </configuration>
       </plugin>
     </plugins>
