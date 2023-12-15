@@ -1,9 +1,10 @@
-package by.andd3dfx.aspects;
+package by.andd3dfx.aspect;
+
+import by.andd3dfx.dto.User;
+import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
-
-import org.junit.Test;
 
 public class CustomUserAspectTest {
 

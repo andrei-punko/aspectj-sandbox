@@ -1,6 +1,5 @@
-package by.andd3dfx.aspects;
+package by.andd3dfx.aspect;
 
-import java.io.StringWriter;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Around;
@@ -8,22 +7,24 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 
+import java.io.StringWriter;
+
 @Aspect
 public class CustomUserAspect {
 
     private static final StringWriter writer = new StringWriter();
 
-    @Before("execution(* by.andd3dfx.aspects.User.printHello(..))")
+    @Before("execution(* by.andd3dfx.dto.User.printHello(..))")
     public void beforePrintHello() {
         writer.write("Action before printHello() method call");
     }
 
-    @After("execution(* by.andd3dfx.aspects.User.printHello(..))")
+    @After("execution(* by.andd3dfx.dto.User.printHello(..))")
     public void afterPrintHello() {
         writer.append("Action after printHello() method call");
     }
 
-    @Around("execution(* by.andd3dfx.aspects.User.setAge(..)) && args(value)")
+    @Around("execution(* by.andd3dfx.dto.User.setAge(..)) && args(value)")
     public void aroundPrintHello(ProceedingJoinPoint point, Integer value) throws Throwable {
         writer.append("Action around setAge() method call - first part");
         writer.append("Parameter is " + value);
@@ -33,7 +34,7 @@ public class CustomUserAspect {
         writer.append("Action around setAge() method call - second part");
     }
 
-    @Pointcut("execution(* by.andd3dfx.aspects.User.setName(String))")
+    @Pointcut("execution(* by.andd3dfx.dto.User.setName(String))")
     public void setNamePointcut() {}
 
     @Before("setNamePointcut()")

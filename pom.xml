@@ -28,10 +28,10 @@
     <!-- AspectJ properties -->
     <aspect.lang.version>${java.version}</aspect.lang.version>
     <!-- https://github.com/eclipse/org.aspectj/blob/master/docs/dist/doc/JavaVersionCompatibility.md -->
-    <aspectj.version>1.9.19</aspectj.version>
-    <aspectj-maven-plugin.version>1.14.0</aspectj-maven-plugin.version>
+    <aspectj.version>1.9.21</aspectj.version>
+    <aspectj-maven-plugin.version>1.15.0</aspectj-maven-plugin.version>
 
-    <jacoco.version>0.8.10</jacoco.version>
+    <jacoco.version>0.8.11</jacoco.version>
   </properties>
 
   <dependencies>

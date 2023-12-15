@@ -1,8 +1,12 @@
 <aspectj>
   <aspects>
-    <aspect name="by.andd3dfx.aspects.CustomUserAspect"/>
-    <weaver options="-verbose -showWeaveInfo">
-      <include within="by.andd3dfx.aspects.*"/>
-    </weaver>
+    <aspect name="by.andd3dfx.aspect.CustomUserAspect"/>
   </aspects>
+  <weaver options="-verbose -showWeaveInfo">
+    <include within="by.andd3dfx.dto.*"/>
+
+    <!-- https://stackoverflow.com/a/72197468 -->
+    <!-- For load-time weaving, you needed to include the package of the aspect in the aop.xml: -->
+    <include within="by.andd3dfx.aspect.*"/>
+  </weaver>
 </aspectj>

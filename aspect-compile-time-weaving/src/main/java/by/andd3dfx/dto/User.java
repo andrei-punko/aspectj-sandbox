@@ -1,6 +1,9 @@
-package by.andd3dfx.aspects;
+package by.andd3dfx.dto;
+
+import by.andd3dfx.aspect.CustomUserAspect;
 
 public class User {
+
     private String name;
     private int age;
 
