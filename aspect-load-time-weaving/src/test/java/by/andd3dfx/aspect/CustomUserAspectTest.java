@@ -3,8 +3,7 @@ package by.andd3dfx.aspect;
 import by.andd3dfx.dto.User;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class CustomUserAspectTest {
 
@@ -15,7 +14,7 @@ public class CustomUserAspectTest {
         user.setAge(37);
         user.printHello();
 
-        assertThat("Wrong output", CustomUserAspect.getWriter().toString(), is(EXPECTED_LOG));
+        assertThat(CustomUserAspect.getWriter().toString()).isEqualTo(EXPECTED_LOG);
     }
 
     private final String EXPECTED_LOG = "Action before setName() method call" +
