@@ -10,10 +10,10 @@
   <version>1.0-SNAPSHOT</version>
 
   <modules>
-    <module>aspect-compile-time-weaving</module>
-    <module>aspect-post-compile-time-weaving</module>
-    <module>aspect-stub-sources-for-post-compile-weaving</module>
-    <module>aspect-load-time-weaving</module>
+    <module>compile-time-weaving</module>
+    <module>post-compile-time-weaving</module>
+    <module>stub-sources-for-post-compile-weaving</module>
+    <module>load-time-weaving</module>
     <module>coverage-report</module>
   </modules>
 
@@ -31,7 +31,7 @@
     <aspectj.version>1.9.22.1</aspectj.version>
     <aspectj-maven-plugin.version>1.15.0</aspectj-maven-plugin.version>
 
-    <jacoco.version>0.8.12</jacoco.version>
+    <jacoco.version>0.8.13</jacoco.version>
   </properties>
 
   <dependencies>

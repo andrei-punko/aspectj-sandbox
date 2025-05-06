@@ -13,9 +13,10 @@ Based on [this article](https://www.baeldung.com/aspectj)
 
 ## Types of aspects covered
 
-- Compile-time weaving
-- Post-compile-time weaving
-- Load-time weaving
+- [Compile-time weaving](compile-time-weaving)
+- [Post-compile-time weaving](post-compile-time-weaving)
+  with [sources](stub-sources-for-post-compile-weaving) for it
+- [Load-time weaving](load-time-weaving)
 
 ## How to build
 

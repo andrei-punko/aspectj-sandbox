@@ -9,7 +9,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>aspect-stub-sources-for-post-compile-weaving</artifactId>
+  <artifactId>stub-sources-for-post-compile-weaving</artifactId>
 
   <dependencies>
     <dependency>

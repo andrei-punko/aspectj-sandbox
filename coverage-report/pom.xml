@@ -15,22 +15,22 @@
     <dependencies>
         <dependency>
             <groupId>by.andd3dfx</groupId>
-            <artifactId>aspect-compile-time-weaving</artifactId>
+            <artifactId>compile-time-weaving</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>by.andd3dfx</groupId>
-            <artifactId>aspect-load-time-weaving</artifactId>
+            <artifactId>load-time-weaving</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>by.andd3dfx</groupId>
-            <artifactId>aspect-post-compile-time-weaving</artifactId>
+            <artifactId>post-compile-time-weaving</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>by.andd3dfx</groupId>
-            <artifactId>aspect-stub-sources-for-post-compile-weaving</artifactId>
+            <artifactId>stub-sources-for-post-compile-weaving</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
