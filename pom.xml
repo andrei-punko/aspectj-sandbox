@@ -28,7 +28,7 @@
     <!-- AspectJ properties -->
     <aspect.lang.version>${java.version}</aspect.lang.version>
     <!-- https://github.com/eclipse-aspectj/aspectj/blob/master/docs/release/JavaVersionCompatibility.adoc -->
-    <aspectj.version>1.9.22.1</aspectj.version>
+    <aspectj.version>1.9.24</aspectj.version>
     <aspectj-maven-plugin.version>1.15.0</aspectj-maven-plugin.version>
 
     <jacoco.version>0.8.13</jacoco.version>
@@ -44,7 +44,7 @@
     <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
-      <version>3.26.3</version>
+      <version>3.27.3</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
