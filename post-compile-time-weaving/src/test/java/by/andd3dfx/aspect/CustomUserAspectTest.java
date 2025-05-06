@@ -17,11 +17,11 @@ public class CustomUserAspectTest {
         assertThat(CustomUserAspect.getWriter().toString()).isEqualTo(EXPECTED_LOG);
     }
 
-    private final String EXPECTED_LOG = "Action before setName() method call" +
-        "Action around setAge() method call - first part" +
+    private final String EXPECTED_LOG = "BEFORE setName() method call" +
+        "AROUND setAge() method call - first part" +
         "Parameter is 37" +
-        "Action around setAge() method call - second part" +
-        "Action before printHello() method call" +
+        "AROUND setAge() method call - second part" +
+        "BEFORE printHello() method call" +
         "Hello, Andrei! You are 37 years old!" +
-        "Action after printHello() method call";
+        "AFTER printHello() method call";
 }

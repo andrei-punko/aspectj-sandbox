@@ -16,22 +16,22 @@ public class CustomUserAspect {
 
     @Before("execution(* by.andd3dfx.dto.User.printHello(..))")
     public void beforePrintHello() {
-        writer.write("Action before printHello() method call");
+        writer.write("BEFORE printHello() method call");
     }
 
     @After("execution(* by.andd3dfx.dto.User.printHello(..))")
     public void afterPrintHello() {
-        writer.append("Action after printHello() method call");
+        writer.append("AFTER printHello() method call");
     }
 
     @Around("execution(* by.andd3dfx.dto.User.setAge(..)) && args(value)")
     public void aroundPrintHello(ProceedingJoinPoint point, Integer value) throws Throwable {
-        writer.append("Action around setAge() method call - first part");
+        writer.append("AROUND setAge() method call - first part");
         writer.append("Parameter is " + value);
 
         point.proceed();
 
-        writer.append("Action around setAge() method call - second part");
+        writer.append("AROUND setAge() method call - second part");
     }
 
     @Pointcut("execution(* by.andd3dfx.dto.User.setName(String))")
@@ -39,7 +39,7 @@ public class CustomUserAspect {
 
     @Before("setNamePointcut()")
     public void beforeSetName() {
-        writer.append("Action before setName() method call");
+        writer.append("BEFORE setName() method call");
     }
 
     public static StringWriter getWriter() {
