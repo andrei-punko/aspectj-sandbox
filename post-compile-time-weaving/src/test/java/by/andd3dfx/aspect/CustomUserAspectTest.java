@@ -1,6 +1,7 @@
 package by.andd3dfx.aspect;
 
 import by.andd3dfx.dto.User;
+import by.andd3dfx.logger.LogsCollector;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -14,7 +15,7 @@ public class CustomUserAspectTest {
         user.setAge(37);
         user.printHello();
 
-        assertThat(CustomUserAspect.getWriter().toString()).isEqualTo(EXPECTED_LOG);
+        assertThat(LogsCollector.text()).isEqualTo(EXPECTED_LOG);
     }
 
     private final String EXPECTED_LOG = "BEFORE setName() method call" +

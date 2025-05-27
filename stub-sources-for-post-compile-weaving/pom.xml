@@ -11,11 +11,4 @@
 
   <artifactId>stub-sources-for-post-compile-weaving</artifactId>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.aspectj</groupId>
-      <artifactId>aspectjrt</artifactId>
-      <version>${aspectj.version}</version>
-    </dependency>
-  </dependencies>
 </project>

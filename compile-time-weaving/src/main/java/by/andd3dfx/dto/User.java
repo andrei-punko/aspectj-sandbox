@@ -1,6 +1,6 @@
 package by.andd3dfx.dto;
 
-import by.andd3dfx.aspect.CustomUserAspect;
+import by.andd3dfx.logger.LogsCollector;
 
 public class User {
 
@@ -16,6 +16,6 @@ public class User {
     }
 
     public void printHello() {
-        CustomUserAspect.getWriter().append("Hello, " + name + "! You are " + age + " years old!");
+        LogsCollector.append("Hello, " + name + "! You are " + age + " years old!");
     }
 }
